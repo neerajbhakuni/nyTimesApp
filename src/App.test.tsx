@@ -1,9 +1,15 @@
-import React from 'react';
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import { render } from "@testing-library/react";
+import App from "./App";
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+jest.mock('axios', () => ({
+  ...jest.requireActual('axios') as any,
+ default: () => jest.fn(),
+}));
+
+describe("rendering App", () => {
+  test('take snapshot of App', () => {
+    const {container} = render(<App/>);
+    expect(container).toMatchSnapshot();
+
+  });
 });

@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rendering Article screen Shows Article 1`] = `
+<div>
+  <div
+    class="mx-16 my-8 flex flex-col bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+    data-testid="card-0"
+  >
+    <img
+      alt="title"
+      class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg	"
+      data-testid="card-image-id"
+      src=""
+    />
+    <div
+      class="flex flex-col justify-between p-8 leading-normal"
+    >
+      <p
+        class="mb-1 text-lg text-gray-700 dark:text-gray-400"
+        data-testid="card-date-section-id"
+      >
+        NaN Invalid Date | section
+      </p>
+      <h5
+        class="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white"
+        data-testid="card-title-id"
+      >
+        title
+      </h5>
+      <p
+        class="mb-3 text-lg text-gray-700 dark:text-gray-400"
+        data-testid="card-description-id"
+      >
+        abstract
+      </p>
+      <p
+        class="mb-2 text-lg text-gray-700 dark:text-gray-400"
+        data-testid="card-byline-id"
+      >
+        byline
+      </p>
+    </div>
+  </div>
+</div>
+`;

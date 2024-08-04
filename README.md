@@ -1,46 +1,81 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## The New York Times App 
+
+The New York Times app whichs show the list of Most Popular NY articles and on click of
+article it will take user to detail page of the article.
+
+### `Home Page`
+
+![alt text](assets/ny-times-most-popular-article.png)
+
+### `Article Detail Page`
+
+![alt text](assets/article-detail-screenshot.png)
+
+## Technical Stack
+
+* ReactJs
+* TypeScript
+* Axios
+* JEST
+* TestingLibrary/react
+* Cypress
+
+## Version Used
+
+### yarn - 1.22.15
+### node - 20.12.0
+### npm - 10.5.0
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+### `yarn`
+
+To install all the project related packages from package.json. It will create a yarn.lock 
+file in you project 
+
+### `yarn start`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Open [http://localhost:3000](http://localhost:3000) to view it in browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+The page will reload when you make changes.
+You may also see any lint errors in the console.
 
-### `npm test`
+### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Launches the test runner in the interactive watch mode.
+You can find the coverage report in coverage package coverage/icov-report/index.html
 
-### `npm run build`
-
+### `yarn build`
+ 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## For Mac / Windows
 
-### `npm run eject`
+In package.json for building the project use
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+###  "start": "react-scripts start",
+###  "build": "react-scripts build",
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Cypress E2E testing
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### yarn cypress open 
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+It will open cypress window and cofigure some steps to add it into you code 
+After writing cypress test cases. In that window it will execute the test cases.
 
-## Learn More
+![alt text](assets/cypress-report-screenshot.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## React Test cases
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### yarn test
+
+![alt text](assets/code-coverage-screensot.png)
+

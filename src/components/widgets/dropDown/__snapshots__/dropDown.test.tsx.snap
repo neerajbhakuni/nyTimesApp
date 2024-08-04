@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rendering DropDown screen Shows DropDown 1`] = `
+<div>
+  <div
+    class="flex justify-end mr-10"
+  >
+    <div
+      class="text-2xl font-bold text-gray-800 pr-8"
+    >
+      Select Filter:
+      <select
+        class="text-2xl font-bold text-gray-800 ml-4 px-8 text-center border-solid border-2 border-black rounded"
+      >
+        <option
+          class="text-2xl text-gray-800 text-left"
+          value="1"
+        >
+          1 day
+        </option>
+        <option
+          class="text-2xl text-gray-800 text-left"
+          value="2"
+        >
+          2 days
+        </option>
+      </select>
+    </div>
+  </div>
+</div>
+`;
