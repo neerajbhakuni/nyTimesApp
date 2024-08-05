@@ -1,4 +1,4 @@
-import { Articles, Header, Loader } from '../../components/elements';
+import { Articles, Header, Loader } from '../../components/widgets';
 import { useMostPopularEndPoint } from '../../hooks/useMostPopularEndPoint';
 import { DAYS_LIST } from '../../configs/constants';
 

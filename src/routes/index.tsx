@@ -1,7 +1,7 @@
 import { Suspense } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Home, ArticleDetail } from "../screens";
-import { Loader } from "../components/elements";
+import { Loader } from "../components/widgets";
 
 const AppRoutes = () => {
   return (

@@ -1,4 +1,4 @@
-import { Card } from '../../widgets';
+import { Card } from '../../elements';
 import { fetchMediaUrl, getDateAndMonth } from '../../../helper';
 
 type ArticlesProps = {

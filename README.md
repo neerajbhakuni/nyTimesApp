@@ -1,7 +1,7 @@
 
 ## The New York Times App 
 
-The New York Times app whichs show the list of Most Popular NY articles and on click of
+The New York Times app which show the list of Most Popular NY articles and on click of
 article it will take user to detail page of the article.
 
 ### `Home Page`

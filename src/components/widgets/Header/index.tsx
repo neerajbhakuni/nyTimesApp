@@ -1,4 +1,4 @@
-import { HeaderTitle, DropDown } from "../../widgets";
+import { HeaderTitle, DropDown } from "../../elements";
 
 type HeaderProps = {
     selectedValue: string
