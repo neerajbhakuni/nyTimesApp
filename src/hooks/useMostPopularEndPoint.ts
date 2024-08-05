@@ -19,6 +19,7 @@ export const useMostPopularEndPoint = () => {
         const response = await service.get(url);
         setIsLoading(false);
         if (response.status === STATUS_CODE.HTTP_OK) {
+          setError(undefined);
           setArticles(response?.data?.results || []);
         }
       } catch (error) {
