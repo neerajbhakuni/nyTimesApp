@@ -1,6 +1,7 @@
 import { Suspense } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Home, ArticleDetail } from "../screens";
+import { Loader } from "../components/elements";
 
 const AppRoutes = () => {
   return (
@@ -9,7 +10,7 @@ const AppRoutes = () => {
         <Route
           path="/"
           element={
-            <Suspense fallback={<></>}>
+            <Suspense fallback={<Loader isLoading={true}/>}>
               <Home />
             </Suspense>
           }
@@ -17,7 +18,7 @@ const AppRoutes = () => {
         <Route
           path="/detail/:articleId"
           element={
-            <Suspense fallback={<></>}>
+            <Suspense fallback={<Loader isLoading={true}/>}>
               <ArticleDetail />
             </Suspense>
           }
@@ -25,7 +26,7 @@ const AppRoutes = () => {
         <Route
           path="*"
           element={
-            <Suspense fallback={<></>}>
+            <Suspense fallback={<Loader isLoading={true}/>}>
               <Home />
             </Suspense>
           }
