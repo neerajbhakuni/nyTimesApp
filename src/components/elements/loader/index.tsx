@@ -6,7 +6,7 @@ const Loader = ({ isLoading }: LoaderProps) => {
   return (
     <>
       {isLoading ? (
-        <div className="fixed inset-0 z-50 flex justify-center items-center bg-slate-900 backdrop-blur-sm">
+        <div className="fixed inset-0 z-50 flex justify-center items-center bg-slate-900">
           <svg role="status" className="h-20 w-20 animate-spin mr-2 text-gray-200 dark:text-gray-600 fill-blue-600"
             viewBox="0 0 100 101" fill="blue" xmlns="http://www.w3.org/2000/svg">
             <path

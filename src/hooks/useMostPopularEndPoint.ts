@@ -5,6 +5,7 @@ import { STATUS_CODE, DAYS_LIST } from "../configs/constants";
 export const useMostPopularEndPoint = () => {
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [articles, setArticles] = useState([]);
+  const [error, setError] = useState<string | undefined>(undefined);
   const [period, setPeriod] = useState<string>(DAYS_LIST[0]);
 
   useEffect(() => {
@@ -16,11 +17,13 @@ export const useMostPopularEndPoint = () => {
         );
         setIsLoading(true);
         const response = await service.get(url);
-        if (response.status === STATUS_CODE.HTTP_OK)
-          setArticles(response?.data?.results || []);
         setIsLoading(false);
+        if (response.status === STATUS_CODE.HTTP_OK) {
+          setArticles(response?.data?.results || []);
+        }
       } catch (error) {
-
+        setIsLoading(false);
+        setError('Unable to load articles. Retry again');
       }
     };
 
@@ -35,6 +38,7 @@ export const useMostPopularEndPoint = () => {
     isLoading,
     articles,
     period,
+    error,
     onDropDownChangeValue,
   };
 };

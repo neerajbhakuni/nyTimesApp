@@ -52,7 +52,7 @@ exports[`rendering Home screen Shows Home 1`] = `
     </div>
   </div>
   <div
-    class="fixed inset-0 z-50 flex justify-center items-center bg-slate-900 backdrop-blur-sm"
+    class="fixed inset-0 z-50 flex justify-center items-center bg-slate-900"
   >
     <svg
       class="h-20 w-20 animate-spin mr-2 text-gray-200 dark:text-gray-600 fill-blue-600"
