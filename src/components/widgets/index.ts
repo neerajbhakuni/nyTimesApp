@@ -1,3 +1,3 @@
-export { default as Card } from "./card";
-export { default as HeaderTitle } from "./headerTitle";
-export { default as DropDown } from "./dropDown";
+export { default as Card } from "./Card";
+export { default as HeaderTitle } from "./HeaderTitle";
+export { default as DropDown } from "./DropDown";
