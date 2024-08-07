@@ -1,22 +1,17 @@
 import { render, screen } from "@testing-library/react";
 import ArticleDetail from "./index";
 
-const mockUseLocationValue = {
-    state: {
-        mediaUrl: 'https://test.com',
-        title: 'title',
-        abstract: 'abstract',
-    }
-};
-
-jest.mock('react-router-dom', () => {
-    return {
-        ...jest.requireActual('react-router-dom') as any,
-        useLocation: () => jest.fn().mockImplementation(() => {
-            return mockUseLocationValue;
-        })
-    }
-});
+jest.mock("react-router-dom", () => ({
+    ...jest.requireActual("react-router-dom"),
+    useLocation: () => ({
+        pathname: "localhost:3000/example/path",
+        state: {
+            mediaUrl: 'https://test.com',
+            title: 'title',
+            abstract: 'abstract',
+        }
+    })
+}));        
 
 describe("rendering ArticleDetail screen", () => {
     test("Shows ArticleDetail", () => {

@@ -2,13 +2,14 @@ import { useLocation } from "react-router-dom";
 import { HeaderTitle } from "../../components/elements";
 
 const ArticleDetail = () => {
-    const { state } = useLocation();
+    const location = useLocation();
+    const {state} = location;
 
     return (
         <>
             <HeaderTitle />
             {
-                !state ? (<div className='pt-10 flex justify-center mx-20 text-3xl text-gray-700 dark:text-gray-400'>
+                !state ? (<div data-testid={'no-article-found'} className='pt-10 flex justify-center mx-20 text-3xl text-gray-700 dark:text-gray-400'>
                     No article found
                 </div>
                 ) : (<div className='pt-10 flex justify-center mx-20'>
