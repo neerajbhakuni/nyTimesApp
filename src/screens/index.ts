@@ -1,3 +1,3 @@
-export {default as Home} from './Home';
-export {default as ArticleDetail} from './ArticleDetail';
+export {default as Home} from './home';
+export {default as ArticleDetail} from './articleDetail';
 
