@@ -14,6 +14,7 @@ jest.mock("react-router-dom", () => ({
 }));        
 
 describe("rendering ArticleDetail screen", () => {
+    
     test("Shows ArticleDetail", () => {
         const { container } = render(<ArticleDetail />);
         expect(container).toMatchSnapshot();

@@ -20,7 +20,7 @@ const Card = ({ card, index }: CardProps) => {
 
     return (
         <div key={id} data-testid={`card-${index}`} onClick={() => navigate(`/detail/${id}`, { state: card })} className="mx-16 my-8 flex flex-col bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700" >
-            <img data-testid={`card-image-${id}`} className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg	" src={mediaUrl} alt={`${title}`} />
+            <img data-testid={`card-image-${id}`} className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src={mediaUrl} alt={`${title}`} />
             <div className="flex flex-col justify-between p-8 leading-normal">
                 <p data-testid={`card-date-section-${id}`} className="mb-1 text-lg text-gray-700 dark:text-gray-400">
                     {`${publishedDate} | ${section}`}

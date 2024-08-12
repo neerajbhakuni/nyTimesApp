@@ -2,9 +2,20 @@ import { useState, useEffect } from "react";
 import service from "../services";
 import { STATUS_CODE, DAYS_LIST } from "../configs/constants";
 
+type ArticleProps = { 
+  abstract: string
+  byline: string
+  title: string 
+  id: string
+  url: string 
+  section: string
+  media: any
+  published_date: string
+};
+
 export const useMostPopularEndPoint = () => {
   const [isLoading, setIsLoading] = useState<boolean>(false);
-  const [articles, setArticles] = useState([]);
+  const [articles, setArticles] = useState<ArticleProps[]>([]);
   const [error, setError] = useState<string | undefined>(undefined);
   const [period, setPeriod] = useState<string>(DAYS_LIST[0]);
 

@@ -4,7 +4,6 @@ import { HeaderTitle } from "../../components/elements";
 const ArticleDetail = () => {
     const location = useLocation();
     const {state} = location;
-
     return (
         <>
             <HeaderTitle />
